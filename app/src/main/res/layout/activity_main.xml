@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="7dp"
+            android:hint="Usuario"
+            android:textColorHint="@color/md_theme_dark_inversePrimary"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxCollapsedPaddingTop="2dp"
+            app:boxStrokeColor="@color/md_theme_light_primary"
+            app:boxStrokeErrorColor="@color/md_theme_light_error"
+            app:boxStrokeWidth="1dp"
+            app:counterOverflowTextColor="@color/md_theme_light_error"
+            app:counterTextColor="@color/md_theme_dark_onPrimary"
+            app:endIconTint="@color/md_theme_light_primary"
+            app:errorIconTint="@color/md_theme_light_error"
+            app:errorTextColor="@color/md_theme_light_error"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:passwordToggleTint="@color/md_theme_dark_inversePrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHighlight="@color/md_theme_light_onPrimaryContainer"
+                android:textColorLink="@color/md_theme_light_onPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="7dp"
+            android:hint="Constraseña"
+            android:textColorHint="@color/md_theme_dark_inversePrimary"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxCollapsedPaddingTop="2dp"
+            app:boxStrokeColor="@color/md_theme_light_primary"
+            app:boxStrokeErrorColor="@color/md_theme_light_error"
+            app:boxStrokeWidth="1dp"
+            app:counterOverflowTextColor="@color/md_theme_light_error"
+            app:counterTextColor="@color/md_theme_dark_onPrimary"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/md_theme_light_primary"
+            app:errorIconTint="@color/md_theme_light_error"
+            app:errorTextColor="@color/md_theme_light_error"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:passwordToggleTint="@color/md_theme_dark_inversePrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHighlight="@color/md_theme_light_onPrimaryContainer"
+                android:textColorLink="@color/md_theme_light_onPrimaryContainer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:gravity="center"
+            android:lineSpacingExtra="24sp"
+            android:text="Iniciar Sesión"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/huella_dactilar_1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio con huella"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/md_theme_light_surfaceTint" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:text="Registrate"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
